@@ -1,0 +1,136 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #FFC107, #33CC33, #CCCCCC, #999999);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  h1 span {
+    color: #333; 
+  }
+  
+  h1 span:nth-child(1) {
+    color: #FF69B4; 
+  }
+  
+  h1 span:nth-child(2) {
+    color: #33CC33; 
+  }
+  
+  h1 span:nth-child(3) {
+    color: #FFC107; 
+  }
+  
+  h1 span:nth-child(4) {
+    color: #0099FF; 
+  }
+  
+  h1 span:nth-child(5) {
+    color: #FF69B4; 
+  }
+  
+  h1 span:nth-child(6) {
+    color: #33CC33; 
+  }
+  
+  h1 span:nth-child(7) {
+    color: #FFC107; 
+  }
+  
+  h1 span:nth-child(8) {
+    color: #0099FF; 
+  }
+  
+  h1 span:nth-child(9) {
+    color: #FF69B4; 
+  }
+  
+  h1 span:nth-child(10) {
+    color: #33CC33; 
+  }
+  
+  h1 span:nth-child(11) {
+    color: #FFC107; 
+  }
+
+.game-container {
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#restart-btn:hover {
+    background-color: #45a049;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #2196F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.card.flip .card-front {
+    transform: rotateY(0deg);
+}
+
+.card.flip .card-back {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    background-color: #2196F3;
+    transform: rotateY(0deg);
+}
